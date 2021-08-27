@@ -20,4 +20,4 @@ f.close()
 try:
     subprocess.run(["python",f.name])
 except:
-    import gengkumpo
+    print("subprocess error")
